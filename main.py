@@ -1,11 +1,12 @@
-from flask import Flask
+from flask import Flask, url_for, redirect
 
 #create flask application
 app = Flask(__name__)
 
 #serve index.html
 @app.route('/')
-def hello():
-    return 'Hello, World!'
+def index():
+    return redirect("static/index.html")
+
 
 app.run()
