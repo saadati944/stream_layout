@@ -1,0 +1,19 @@
+html,body{
+    margin:0;
+    background: transparent;
+    overflow: hidden;
+}
+
+div{
+    background: red;
+    margin: 50px;
+    display: block;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+}
+
+p,img{
+    display: block;
+    position: fixed;
+}
