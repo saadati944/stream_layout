@@ -1,3 +1,5 @@
+//all commands are in json format
+
 //test command :
 {
 	"cmd":"hello"
@@ -5,8 +7,21 @@
 
 //show image :
 {
-	"cmd":"image"
-	"src":"path to image"
+	"cmd":"image",
+	"src":"path to image",
+	"x":x,
+	"y":y,
+	"width":width,
+	"height":height,
 	"duration":secconds
-	// -1 to show image forever
+}
+
+//start listening to commands
+{
+	"cmd":"startlistening"
+}
+
+//do nothing
+{
+	"cmd":"null"
 }
