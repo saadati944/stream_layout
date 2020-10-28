@@ -1,0 +1,12 @@
+//test command :
+{
+	"cmd":"hello"
+}
+
+//show image :
+{
+	"cmd":"image"
+	"src":"path to image"
+	"duration":secconds
+	// -1 to show image forever
+}
