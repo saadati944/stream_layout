@@ -1,0 +1,14 @@
+#this is a comment
+
+#show an image
+image:src/x/y/width/height/duration
+
+#custome json commands like this
+custome:{"cmd":"image","src":"img.png","x":10,"y":10,"width":400,"height":200,"duration":-1 }
+
+#end receiving initialising commands
+#the program will automatically add 'end' to end of 'initcommands.txt' file
+end
+
+#start listening to incoming commands from user
+listen
