@@ -8,5 +8,8 @@ app = Flask(__name__)
 def index():
     return redirect("static/index.html")
 
+@app.route('/command')
+def command():
+    return '{"cmd":"hello"}'
 
 app.run()
