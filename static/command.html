@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>send command to stream layout</title>
+    </head>
+    <body id="body">
+        <form action="../addcommand" method="POST">
+            <textarea  name="json" value='{"cmd":"hello"}'></textarea>
+            <input type="submit" value="send"/>
+        </form>
+    </body>
+    <style>
+        body{
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+        form{
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 10px;
+            overflow: hidden;
+        }
+        textarea{
+            display: block;
+            width: calc(100% - 50px);
+            height: calc(100% - 30px);
+            margin: auto;
+            min-height: 500px;
+        }
+        input{
+            display: block;
+            width: calc(100% - 50px);
+            height: 30px;
+            margin: auto;
+        }
+    </style>
+</html>
