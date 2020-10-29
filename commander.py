@@ -20,9 +20,9 @@ def loadinit():
                 initcommands.append(converttojson(ln))
 
 def converttojson(line):
-    if line.startswith('image:') and line.count('/')==5:
+    if line.startswith('image:') and line.count('/')==6:
         params=line[6:].split('/')
-        return '{ "cmd":"image" , "src":"'+params[0]+'" , "x":'+params[1]+' , "y":'+params[2]+' , "width":'+params[3]+' , "height":'+params[4]+' , "duration":'+params[5]+' }'
+        return '{ "cmd":"image" , "src":"'+params[0]+'" , "x":'+params[1]+' , "y":'+params[2]+' , "width":'+params[3]+' , "height":'+params[4]+' , "duration":'+params[5]+' , "mode":'+params[6]+' }'
     elif line=='end':
         return '{ "cmd":"end" }'
     elif line=='listen':

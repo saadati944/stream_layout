@@ -3,17 +3,41 @@ html,body{
     background: transparent;
     overflow: hidden;
 }
-
-div{
-    background: red;
-    margin: 50px;
+p,img {
     display: block;
     position: fixed;
-    width: 100px;
-    height: 100px;
+    font-size: 21px;
+    text-align: center;
 }
 
-p,img{
-    display: block;
-    position: fixed;
+
+@keyframes fadein {
+    from { opacity: 0;
+        visibility: hidden; }
+    to   { opacity: 1;
+    visibility: visible; }
 }
+@keyframes fadeout {
+    from { opacity: 1;
+        visibility: visible; }
+    to   { opacity: 0;
+           visibility: hidden; }
+}
+
+@keyframes topin{from{visibility: hidden; transform: translateY(-300px); opacity:0} to{visibility: visible; transform:translateY(0px); opacity:1}}
+@keyframes topout{from{visibility: visible; transform:translateY(0px); opacity:1} to{visibility: hidden; transform:translateY(-300px); opacity:0}}
+
+
+@keyframes rightin{from{visibility: hidden; transform: translateX(+300px); opacity:0} to{visibility: visible; transform:translateX(0px); opacity:1}}
+@keyframes rightout{from{visibility: visible; transform:translateX(0px); opacity:1} to{visibility: hidden; transform:translateX(+300px); opacity:0}}
+
+
+@keyframes bottomin{from{visibility: hidden; transform: translateY(+300px); opacity:0} to{visibility: visible; transform:translateY(0px); opacity:1}}
+@keyframes bottomout{from{visibility: visible; transform:translateY(0px); opacity:1} to{visibility: hidden; transform:translateY(+300px); opacity:0}}
+
+
+@keyframes leftin{from{visibility: hidden; transform: translateX(-300px); opacity:0} to{visibility: visible; transform:translateX(0px); opacity:1}}
+@keyframes leftout{from{visibility: visible; transform:translateX(0px); opacity:1} to{visibility: hidden; transform:translateX(-300px); opacity:0}}
+
+@keyframes zoomin{from{transform:scale(0); visibility: hidden;} to{transform:scale(1); visibility: visible;}}
+@keyframes zoomout{from{transform:scale(1); visibility: visible;} to{transform:scale(0); visibility: hidden;}}

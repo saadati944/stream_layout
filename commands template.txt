@@ -1,4 +1,7 @@
 //all commands are in json format
+//mode means mode to show and hide
+//0:cut
+//1:fade
 
 //test command :
 {
@@ -13,7 +16,8 @@
 	"y":y,
 	"width":width,
 	"height":height,
-	"duration":secconds
+	"duration":secconds,
+	"mode":0
 }
 
 //start listening to commands
