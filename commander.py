@@ -28,4 +28,4 @@ def converttojson(line):
     elif line=='listen':
         return '{ "cmd":"startlistening" }'
     elif line.startswith('custome:'):
-        return line[8:]
+        return '{"cmd":"custome","el":"'+line[8:].replace('"','\\"')+'"}'

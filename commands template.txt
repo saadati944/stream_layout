@@ -20,6 +20,12 @@
 	"mode":0
 }
 
+//add a custome element
+{
+	"cmd":"custome",
+	"el":"custome element in html form",
+}
+
 //start listening to commands
 {
 	"cmd":"startlistening"

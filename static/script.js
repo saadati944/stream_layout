@@ -8,7 +8,7 @@ function getinitcommands(){
             if(command['cmd']=='startlistening')
             {
                 setInterval(getcommand, 1000);
-                getinitcommands();
+                getcommand();
             }
             else if (command['cmd']=='end')
             {
@@ -18,8 +18,12 @@ function getinitcommands(){
             else if (command['cmd']=="image")
             {
                 addimage(command);
-                getinitcommands();
             }
+            else if (command['cmd'] =="custome")
+            {
+                addcustome(command);
+            }
+            getinitcommands();
         })
     });
 }
@@ -61,6 +65,10 @@ function addimage(command)
         removeelement(elementid,command['duration'],command['mode']);
         //setTimeout("document.getElementById('"+elementid+"').remove()",command['duration']);
     }
+}
+function addcustome(command)
+{
+    document.getElementById("body").innerHTML+=command['el']
 }
 
 function removeelement(idtoremove,timeout,mode=0)
